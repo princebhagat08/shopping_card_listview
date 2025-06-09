@@ -1,7 +1,6 @@
 # 🛍️ Flutter Shopping Card
 
 A customizable and visually appealing **shopping card UI** component for Flutter.  
-<<<<<<< HEAD
 This package helps you display product cards in vertical or horizontal lists with built-in features like image caching, shimmer loading, favorite toggling, and gesture detection for product navigation.
 
 ## ✨ Features
@@ -139,4 +138,3 @@ class _MyAppState extends State<MyApp> {
 ```
 
 
->>>>>>> d2e80d42eb58db467de0809b329d4181e9da66f2
