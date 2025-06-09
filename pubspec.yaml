@@ -3,7 +3,7 @@ description: "A visually appealing shopping card UI package for Flutter, featuri
   Easily display product cards in horizontal or vertical list views with integrated gesture handling for navigation and interactivity. 
   Ideal for e-commerce apps and product showcases."
 version: 0.0.1
-homepage:
+homepage: https://github.com/princebhagat08/shopping_card_listview
 
 environment:
   sdk: ^3.8.1
