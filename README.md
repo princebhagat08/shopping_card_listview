@@ -14,6 +14,14 @@ This package helps you display product cards in vertical or horizontal lists wit
 ## 📸 Preview
 
 
+<p align="center">
+  <img src="https://github.com/princebhagat08/shopping_card_listview/blob/main/screenshots/vertical-scrolling.jpg?raw=true" width="250" alt="Favorite Toggle">
+  <img src="https://github.com/princebhagat08/shopping_card_listview/blob/main/screenshots/shimmer-effect.jpg?raw=true" width="250" alt="Shimmer Effect" style="margin-right: 10px;">
+  <img src="https://github.com/princebhagat08/shopping_card_listview/blob/main/screenshots/horizontal-scrolling.png?raw=true" width="250" alt="Card UI" style="margin-right: 10px;">
+</p>
+
+
+
 ## 🚀 Getting Started
 
 ### 1. Install
