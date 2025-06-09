@@ -1,39 +1,117 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# 🛍️ Flutter Shopping Card
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+A customizable and visually appealing **shopping card UI** component for Flutter.  
+This package is perfect for e-commerce or catalog-style apps, featuring image caching, shimmer loading, and gesture navigation.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+---
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+## ✨ Features
 
-## Features
+- 📦 Customizable product card layout
+- 🔄 Vertical and horizontal list view support
+- ⚡ Built-in shimmer loading effect
+- 📷 Image caching using `cached_network_image`
+- 👆 Tap detection for product navigation
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+---
 
-## Getting started
+## 📸 Preview
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
 
-## Usage
+---
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+## 🚀 Getting Started
 
-```dart
-const like = 'sample';
+### 1. Install
+
+Add this to your `pubspec.yaml`:
+
+```yaml
+dependencies:
+  shopping_card_listview: ^0.0.1
+
+```
+Then run:
+```
+flutter pub get
+```
+```Import the package
+import 'package:shopping_card_listview/shopping_card.dart_listview';
 ```
 
-## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+##Example
+```
+import 'package:flutter/material.dart';
+import 'package:shopping_card_listview/shopping_card.dart_listview';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    List<ShoppingCardData> products = [
+      ShoppingCardData(
+          imageUrl: 'https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp',
+          title: 'Demo Product1',
+          price: '\$10.00',
+          totalItems: 15,
+          
+        ),
+      ShoppingCardData(
+          imageUrl: 'https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp',
+          title: 'Demo Product2',
+          price: '\$10.00',
+          totalItems: 15,
+        ),
+      ShoppingCardData(
+          imageUrl: 'https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp',
+          title: 'Demo Product3',
+          price: '\$10.00',
+          totalItems: 15,
+        
+        ),
+      ShoppingCardData(
+          imageUrl: 'https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp',
+          title: 'Demo Product4',
+          price: '\$10.00', totalItems: 15,
+        ),
+      ShoppingCardData(
+          imageUrl: 'https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp',
+          title: 'Demo Product5',
+          price: '\$10.00',
+          totalItems: 15,
+        ),];
+
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Shopping Card Demo',
+      home: Scaffold(
+        appBar: AppBar(title: const Text('Shopping Card UI')),
+        body: CardListView(
+          scrollDirection: Axis.vertical,
+          onClick: (product){
+          //   Write your code here
+          },
+          isLoading: false,
+          products: products
+
+        ),
+      ),
+    );
+  }
+}
+
+```
+
+
