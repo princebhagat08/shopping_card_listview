@@ -1,4 +1,4 @@
-name: shopping_card_listview
+name: shopping_card
 description: "A visually appealing shopping card UI package for Flutter, featuring support for dynamic product lists, image caching, and built-in shimmer loading effects. 
   Easily display product cards in horizontal or vertical list views with integrated gesture handling for navigation and interactivity. 
   Ideal for e-commerce apps and product showcases."
